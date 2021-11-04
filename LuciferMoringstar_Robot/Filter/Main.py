@@ -170,9 +170,6 @@ async def group(client, message):
         await Send_message.delete()
         # await bot.delete_messages(update.chat.id,update.message_id)
         return  # return if no files found for that query
-           return
-        if not btn:
-            return
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
