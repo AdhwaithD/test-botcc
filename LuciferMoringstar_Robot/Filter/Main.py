@@ -118,17 +118,22 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"""<b>📀 𝖳𝗂𝗍𝗅𝖾 : {movie_info['title']}</b>
-<b>⏱️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : {movie_info['duration']}</b>
+        mo_tech_yt = f"""<b>🎬 𝖳𝗂𝗍𝗅𝖾 : {movie_info['title']}</b>
+<b>⌚️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : {movie_info['duration']}</b>
 <b>🌟 𝖱𝖺𝗍𝗂𝗇𝗀 : {movie_info['imdb_rating']}/10</b>
+
 🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{movie_info['votes']}</b>
 📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{movie_info['release']}</b>
+
 🎭 𝖦𝖾𝗇𝗋𝖾 : <b>{movie_info['genre']}</b>
 🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{movie_info['country']}</b>
+
 🎥 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
 📝 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
+
 👨‍🎤 Cast : <b>{movie_info['actors']}</b>
 💰 Box-Office : <b>{movie_info['BoxOffice']}</b>
+
 🗒 **Storyline** : <code>{movie_info['plot']}</code>"""
         nyva=BOT.get("username")
         if not nyva:
