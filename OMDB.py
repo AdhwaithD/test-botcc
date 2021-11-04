@@ -27,5 +27,6 @@ def get_movie_info(movieTitle):
     movie_info["votes"] = response.get("imdbVotes")
     movie_info["imdb_id"] = response.get("imdbID")
     movie_info["pimage"] = response.get("Poster")
+    movie_info["BoxOffice"] = response.get("boxoffice")
 
     return movie_info
