@@ -21,6 +21,7 @@ def get_movie_info(movieTitle):
     movie_info["writer"] = response.get("Writer")
     movie_info["actors"] = response.get("Actors")
     movie_info["plot"] = response.get("Plot")
+    movie_info["language"] = response.get("Language")
     movie_info["country"] = response.get("Country")
     movie_info["ratings"] = response.get("Ratings")
     movie_info["imdb_rating"] = response.get("imdbRating")
