@@ -124,17 +124,17 @@ async def group(client, message):
 
 🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{movie_info['votes']}</b>
 📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{movie_info['release']}</b>
-
 🎭 𝖦𝖾𝗇𝗋𝖾 : <b>{movie_info['genre']}</b>
 🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{movie_info['country']}</b>
 
-🎥 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
-📝 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
+🎞️ 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
+📖 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
+🎧Languages : <b>{movie_info['language']}</b>
 
 👨‍🎤 Cast : <b>{movie_info['actors']}</b>
 💰 Box-Office : <b>{movie_info['BoxOffice']}</b>
 
-🗒 **Storyline** : <code>{movie_info['plot']}</code>"""
+📑 **Storyline** : <code>{movie_info['plot']}</code>"""
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -147,22 +147,30 @@ async def group(client, message):
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
-                )
+               )
         else:
-            LuciferMoringstar=await client.send_message(
-            chat_id = message.chat.id,
-            text=f"""
-👋Hey {message.from_user.mention}
-If this movie is not in our database you will not get that movie..
-Otherwise, the spelling of the name of the requested movie may not be correct...
-So you go to google and check the spelling of the name of the movie you want.
-ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല
-അല്ലെങ്കിൽ, അഭ്യർത്ഥിച്ച സിനിമയുടെ പേരിന്റെ അക്ഷരവിന്യാസം ശരിയായിരിക്കില്ല ...
-അതിനാൽ നിങ്ങൾ ഗൂഗിളിൽ പോയി നിങ്ങൾക്ക് ആവശ്യമുള്ള സിനിമയുടെ പേരിന്റെ സ്പെല്ലിംഗ് പരിശോധിക്കുക""",
-            parse_mode="html",
-            reply_to_message_id=message.message_id
-        )
-            return
+            LuciferMoringstar=await client.send_video(
+        chat_id=message.chat.id,
+        video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
+        caption=f"<b><u>⭕️Search Google🔎 For Correct Spelling And Sent It Here🙏Else Not Get Movie Report To Admins\n\n</u></b>",
+                parse_mode="html",
+                reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton("🔍𝐒𝐞𝐚𝐫𝐜𝐡 𝐠𝐨𝐨𝐠𝐥𝐞🔎", url=f"https://www.google.com/")
+                            ],
+                            [
+                                InlineKeyboardButton("♻️𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐚𝐝𝐦𝐢𝐧♻️", url=f"https://t.me/Lucifer_Devil_AD")
+                            ]
+                        ]
+                    ),
+                reply_to_message_id=update.message_id
+            )
+        await asyncio.sleep(10) # in seconds
+        await Send_message.delete()
+        # await bot.delete_messages(update.chat.id,update.message_id)
+        return  # return if no files found for that query
+           return
         if not btn:
             return
 
