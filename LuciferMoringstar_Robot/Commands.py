@@ -112,10 +112,9 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_text(
-            START_MSG.format(message.from_user.first_name),
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
+        await message.reply_sticker(
+            sticker="CAACAgIAAxkBAAEBNN9hg6aoTgvrx2d3KXMdb5nC1lO_ewAC1AwAAnqLoEieLyIklDO8mx4E",
+            caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -125,7 +124,7 @@ async def start(bot, message):
                             ),
                         InlineKeyboardButton
                             (
-                                "🤖More Botz", url="https://t.me/MT_Botz"
+                                "🤖More Botz", url="https://t.me/AD_BOTZ"
                             )
                     ],
                     [
