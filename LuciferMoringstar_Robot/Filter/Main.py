@@ -152,20 +152,9 @@ async def group(client, message):
             LuciferMoringstar=await client.send_video(
         chat_id=message.chat.id,
         video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
-        caption=f"<b><u>⭕️Search Google🔎 For Correct Spelling And Sent It Here🙏Else Not Get Movie Report To Admins\n\n</u></b>",
-                parse_mode="html",
-                reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton("🔍𝐒𝐞𝐚𝐫𝐜𝐡 𝐠𝐨𝐨𝐠𝐥𝐞🔎", url=f"https://www.google.com/")
-                            ],
-                            [
-                                InlineKeyboardButton("♻️𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐚𝐝𝐦𝐢𝐧♻️", url=f"https://t.me/Lucifer_Devil_AD")
-                            ]
-                        ]
-                    ),
-                reply_to_message_id=update.message_id
-                    return
+        caption=f"<b><u>⭕️Search Google🔎 For Correct Spelling And Sent It Here🙏Else Not Get Movie Report To @Admins\n\n</u></b>",
+        reply_to_message_id=message.message_id)
+            return
         if not btn:
             return
 
