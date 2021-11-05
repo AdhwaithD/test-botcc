@@ -120,49 +120,29 @@ async def group(client, message):
         search = message.text
         mo_tech_yt = f"""<b>🎬 𝖳𝗂𝗍𝗅𝖾 : {movie_info['title']}</b>
 <b>⌚️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : {movie_info['duration']}</b>
-
 <b>🌟 𝖱𝖺𝗍𝗂𝗇𝗀 : {movie_info['imdb_rating']}/10</b>
-
 🗣️ Request By : <b>{message.from_user.mention}</b>
-
 🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{movie_info['votes']}</b>
-
 📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{movie_info['release']}</b>
-
 🎭 𝖦𝖾𝗇𝗋𝖾 : <b>{movie_info['genre']}</b>
-
 🔎 seasons : <b>{movie_info['number of seasons']}</b>
-
 🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{movie_info['country']}</b>
-
 🎞️ 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
-
 📖 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
-
 🎧Languages : <b>{movie_info['language']}</b>
-
 👨‍🎤 Cast : <b>{movie_info['actors']}</b>
-
 💰 Box-Office : <b>{movie_info['box office']}</b>
-
 🔗 aka : <b>{movie_info['akas']}</b>
-
 🆔 imdb_id : <b>{movie_info['imdbID']}</b>
-
 🏮 kind : <b>{movie_info['kind']}</b>
-
 🎶 music_team : <b>{movie_info['music department']}</b>
 
 📺 localized_title : <b>{movie_info['localized title']}</b>
-
 📻 certificates : <b>{movie_info['certificates']}</b>
-
 💸 producer : <b>{movie_info['producer']}</b>
 
 👣 distributors : <b>{movie_info['distributors']}</b>
-
 ©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>{message.chat.title}</b>
-
 
 📑 **Storyline** : <code>{movie_info['plot']}</code>"""
         nyva=BOT.get("username")
