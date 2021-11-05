@@ -120,19 +120,49 @@ async def group(client, message):
         search = message.text
         mo_tech_yt = f"""<b>🎬 𝖳𝗂𝗍𝗅𝖾 : {movie_info['title']}</b>
 <b>⌚️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : {movie_info['duration']}</b>
+
 <b>🌟 𝖱𝖺𝗍𝗂𝗇𝗀 : {movie_info['imdb_rating']}/10</b>
 
+🗣️ Request By : <b>{message.from_user.mention}</b>
+
 🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{movie_info['votes']}</b>
+
 📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{movie_info['release']}</b>
+
 🎭 𝖦𝖾𝗇𝗋𝖾 : <b>{movie_info['genre']}</b>
+
+🔎 seasons : <b>{movie_info['number of seasons']}</b>
+
 🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{movie_info['country']}</b>
 
 🎞️ 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
+
 📖 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
+
 🎧Languages : <b>{movie_info['language']}</b>
 
 👨‍🎤 Cast : <b>{movie_info['actors']}</b>
-💰 Box-Office : <b>{movie_info['BoxOffice']}</b>
+
+💰 Box-Office : <b>{movie_info['box office']}</b>
+
+🔗 aka : <b>{movie_info['akas']}</b>
+
+🆔 imdb_id : <b>{movie_info['imdbID']}</b>
+
+🏮 kind : <b>{movie_info['kind']}</b>
+
+🎶 music_team : <b>{movie_info['music department']}</b>
+
+📺 localized_title : <b>{movie_info['localized title']}</b>
+
+📻 certificates : <b>{movie_info['certificates']}</b>
+
+💸 producer : <b>{movie_info['producer']}</b>
+
+👣 distributors : <b>{movie_info['distributors']}</b>
+
+©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>{message.chat.title}</b>
+
 
 📑 **Storyline** : <code>{movie_info['plot']}</code>"""
         nyva=BOT.get("username")
@@ -149,16 +179,16 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                )
         else:
-            LuciferMoringstar=await client.send_photo(
+            LuciferMoringstar=await client.send_video(
         chat_id=message.chat.id,
-        photo="https://te.legra.ph/file/c4cb2d9260bc894346981.png",
+        video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
         caption=f"""👋Hey {message.from_user.mention}
-If this movie is not in our database you will not get that movie..
+**If this movie is not in our database you will not get that movie..
 Otherwise, the spelling of the name of the requested movie may not be correct...
 So you go to google and check the spelling of the name of the movie you want.
 ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല
 അല്ലെങ്കിൽ, അഭ്യർത്ഥിച്ച സിനിമയുടെ പേരിന്റെ അക്ഷരവിന്യാസം ശരിയായിരിക്കില്ല ...
-അതിനാൽ നിങ്ങൾ ഗൂഗിളിൽ പോയി നിങ്ങൾക്ക് ആവശ്യമുള്ള സിനിമയുടെ പേരിന്റെ സ്പെല്ലിംഗ് പരിശോധിക്കുക""",
+അതിനാൽ നിങ്ങൾ ഗൂഗിളിൽ പോയി നിങ്ങൾക്ക് ആവശ്യമുള്ള സിനിമയുടെ പേരിന്റെ സ്പെല്ലിംഗ് പരിശോധിക്കുക**""",
         reply_to_message_id=message.message_id)
             return
         if not btn:
