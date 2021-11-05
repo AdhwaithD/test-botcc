@@ -169,7 +169,7 @@ async def group(client, message):
 💰 Box-Office : <b>{movie_info['BoxOffice']}</b>
 
 📑 **Storyline** : <code>{movie_info['plot']}</code>"""
-        reply_to_message_id=message.message_id)
+
             return
         if not btn:
             return
