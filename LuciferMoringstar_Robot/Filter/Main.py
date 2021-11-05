@@ -149,17 +149,22 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                )
         else:
-            LuciferMoringstar=await client.send_video(
+            LuciferMoringstar=await client.send_photo(
         chat_id=message.chat.id,
-        video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
-        caption=f"<b><u>⭕️Search Google🔎 For Correct Spelling And Sent It Here🙏Else Not Get Movie Report To Admins\n\n</u></b>",
-           reply_to_message_id=message.message_id)
+        photo="https://te.legra.ph/file/c4cb2d9260bc894346981.png",
+        caption=f"""👋Hey {message.from_user.mention}
+If this movie is not in our database you will not get that movie..
+Otherwise, the spelling of the name of the requested movie may not be correct...
+So you go to google and check the spelling of the name of the movie you want.
+ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല
+അല്ലെങ്കിൽ, അഭ്യർത്ഥിച്ച സിനിമയുടെ പേരിന്റെ അക്ഷരവിന്യാസം ശരിയായിരിക്കില്ല ...
+അതിനാൽ നിങ്ങൾ ഗൂഗിളിൽ പോയി നിങ്ങൾക്ക് ആവശ്യമുള്ള സിനിമയുടെ പേരിന്റെ സ്പെല്ലിംഗ് പരിശോധിക്കുക""",
+        reply_to_message_id=message.message_id)
+            return
+        if not btn:
+            return
 
-              return
-           if not btn:
-              return
-
-         if len(btn) > 10: 
+        if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
             keyword = f"{message.chat.id}-{message.message_id}"
             BUTTONS[keyword] = {
