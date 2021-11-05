@@ -26,8 +26,16 @@ def get_movie_info(movieTitle):
     movie_info["ratings"] = response.get("Ratings")
     movie_info["imdb_rating"] = response.get("imdbRating")
     movie_info["votes"] = response.get("imdbVotes")
+    movie_info["aka"] = response.get("akas")
+    movie_info["box_office"] = response.get("box office")
     movie_info["imdb_id"] = response.get("imdbID")
+    movie_info["music_team"] = response.get("music department")
+    movie_info["seasons"] = response.get("number of seasons")
+    movie_info["kind"] = response.get("kind")
+    movie_info["certificates"] = response.get("certificates")
+    movie_info["localized_title"] = response.get("localized title")
+    movie_info["producer"] = response.get("producer")
+    movie_info["distributors"] = response.get("distributors")
     movie_info["pimage"] = response.get("Poster")
-    movie_info["BoxOffice"] = response.get("boxoffice")
 
     return movie_info
