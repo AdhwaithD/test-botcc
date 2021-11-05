@@ -152,7 +152,23 @@ async def group(client, message):
             LuciferMoringstar=await client.send_video(
         chat_id=message.chat.id,
         video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
-        caption=f"<b><u>⭕️Search Google🔎 For Correct Spelling And Sent It Here🙏Else Not Get Movie Report To @Admins\n\n</u></b>",
+        caption=f"""<b>🎬 𝖳𝗂𝗍𝗅𝖾 : {movie_info['title']}</b>
+<b>⌚️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : {movie_info['duration']}</b>
+<b>🌟 𝖱𝖺𝗍𝗂𝗇𝗀 : {movie_info['imdb_rating']}/10</b>
+
+🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{movie_info['votes']}</b>
+📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{movie_info['release']}</b>
+🎭 𝖦𝖾𝗇𝗋𝖾 : <b>{movie_info['genre']}</b>
+🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{movie_info['country']}</b>
+
+🎞️ 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
+📖 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
+🎧Languages : <b>{movie_info['language']}</b>
+
+👨‍🎤 Cast : <b>{movie_info['actors']}</b>
+💰 Box-Office : <b>{movie_info['BoxOffice']}</b>
+
+📑 **Storyline** : <code>{movie_info['plot']}</code>"""
         reply_to_message_id=message.message_id)
             return
         if not btn:
