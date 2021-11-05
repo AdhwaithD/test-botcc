@@ -170,9 +170,6 @@ async def group(client, message):
 
 📑 **Storyline** : <code>{movie_info['plot']}</code>"""
 
-            return
-        if not btn:
-            return
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
