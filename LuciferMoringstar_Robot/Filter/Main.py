@@ -124,6 +124,9 @@ async def group(client, message):
 🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{movie_info['votes']}</b>
 📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{movie_info['release']}</b>
 🎭 𝖦𝖾𝗇𝗋𝖾 : <b>{movie_info['genre']}</b>
+🎧Languages : <b>{movie_info['language']}</b>
+💰 Box-Office : <b>{movie_info['box office']}</b>
+👨‍🎤 Cast : <b>{movie_info['actors']}</b>
 🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{movie_info['country']}</b>
 🎥 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
 📝 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
