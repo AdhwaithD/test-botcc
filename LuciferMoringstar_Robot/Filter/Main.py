@@ -129,6 +129,7 @@ async def group(client, message):
 🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{movie_info['country']}</b>
 🎥 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
 📝 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
+💰 Box-Office : <b>{movie_info['box office']}</b>
 🗒 **Storyline** : <code>{movie_info['plot']}</code>"""
         nyva=BOT.get("username")
         if not nyva:
