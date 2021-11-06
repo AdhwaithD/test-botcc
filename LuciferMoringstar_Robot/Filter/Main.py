@@ -119,11 +119,9 @@ async def group(client, message):
         btn = []
         search = message.text
         mo_tech_yt = f"""<b>📀 𝖳𝗂𝗍𝗅𝖾 : {movie_info['title']}</b>
-<b>⏱️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : {movie_info['duration']}</b>
+<b>⌚️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : {movie_info['duration']}</b>
 
 <b>🌟 𝖱𝖺𝗍𝗂𝗇𝗀 : {movie_info['imdb_rating']}/10</b>
-
-🖤 Year : <b>{movie_info['Year']}</b>
 
 🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{movie_info['votes']}</b>
 
@@ -140,6 +138,8 @@ async def group(client, message):
 🎥 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{movie_info['director']}</b>
 
 📝 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{movie_info['writer']}</b>
+
+
 
 🗒 **Storyline** : <code>{movie_info['plot']}</code>"""
         nyva=BOT.get("username")
