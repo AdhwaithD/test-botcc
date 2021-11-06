@@ -123,7 +123,7 @@ async def group(client, message):
 
 <b>🌟 𝖱𝖺𝗍𝗂𝗇𝗀 : {movie_info['imdb_rating']}/10</b>
 
-🎧Languages : <b>{movie_info['language']}</b>
+🖤 Year : <b>{movie_info['Year']}</b>
 
 🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{movie_info['votes']}</b>
 
