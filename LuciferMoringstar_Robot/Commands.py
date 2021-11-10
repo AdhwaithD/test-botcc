@@ -112,8 +112,8 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_sticker(
-            sticker="CAACAgIAAxkBAAEBNN9hg6aoTgvrx2d3KXMdb5nC1lO_ewAC1AwAAnqLoEieLyIklDO8mx4E",
+        await message.reply_video(
+            video="https://telegra.ph/file/f72b2c6d426b085c08644.mp4",
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -130,7 +130,7 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton
                             (
-                                "🤔Help", callback_data="help"
+                                "? Help", callback_data="help"
                             ),
                         InlineKeyboardButton
                             (
