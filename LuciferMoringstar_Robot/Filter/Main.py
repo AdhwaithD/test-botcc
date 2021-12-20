@@ -30,7 +30,7 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**You are not on the channel you are watching so you will not get the movie ...!  You can get the movie through this boat only by clicking on the 🔔 Join button below and joining our main channel to get the movie.  Click on T'Try again'👈 to see it and you will get the movie if you give it a Start ...**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -159,7 +159,7 @@ async def group(client, message):
         else:
             LuciferMoringstar=await client.send_video(
         chat_id=message.chat.id,
-        video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
+        video="https://telegra.ph/file/069f86182e9d2a84a90e2.mp4",
         caption=f"""👋Hey
 If this movie is not in our database you will not get that movie..
 Otherwise, the spelling of the name of the requested movie may not be correct...
@@ -317,15 +317,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
                 InlineKeyboardButton('Source Code', url="https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot")
                 ],[
-                InlineKeyboardButton('💫Deploy Video💫', url=f'{TUTORIAL}')
+                InlineKeyboardButton('💫Movies 💫', url=f'{TUTORIAL}')
                 ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
-                    InlineKeyboardButton('Source Code', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('Update Channel', url='t.me/AD_BOTZ'),
+                    InlineKeyboardButton('Movies', url=f'{TUTORIAL}')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -348,7 +348,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💫 DEPLOY VIDEO 💫', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('💫 movies 💫', url=f'{TUTORIAL}')
                     ]
                     ]
                 
@@ -379,7 +379,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('⚡️ Movies ⚡️', url=f'{TUTORIAL}')
                     ]
                     ]
                 
