@@ -19,29 +19,29 @@ HELP = """
 
 <b><u>Bot Owner Only</u></b>
 
-➥ /broadcast Replay Any Message or Media
-➥ /ban_user  click ban_user more info
-➥ /unban_user click unban_user more info
-➥ /banned_users Banned User Details
-➥ /total How Many Files Added In Database
-➥ /logger  Get Logs
-➥ /delete Delete File From Database
+➥ /stickerid - and Get youer sticker id
+➥ /tr - Translate texts to a specific language!   Commands and Usage=   /tr [language code][reply] - translate replied message to specific language.
+➥ /song [Song Name] - To Download Music
+➥ /video [Video Name Like Malik] Get Youer VIDEO
+➥ /vsong [Song Name Like Malik] Get youer vsong
+➥ /lyrics -[Song-Name] Get Youer Song  lyrics
+➥ /json - Bot returns json for all replied messages with /json
 
-<b>[➡️How To Add Old Files For database](https://youtu.be/mtu5hgW-l_o)
+<b>[➡️More futures coming soon...](https://t.me/AD_BOTZ12)
 
-@Mo_Tech_YT></b>
+@ADMOVIEAD</b>
 """
 
 ABOUT = """
-➥ Name : Auto Filter With IMDB
+➥ Name : [Nextfix](t.me/ADMOVEIAD)
     
-➥ Credits : Subin
+➥ Nextfix Movies : [Channil](t.me/Netfix_3)
 
-➥ Editing : [Muhammed RK](t.me/Mrk_YT)
+➥ Editing : [LuciferTG](t.me/Lucifer_Devil_AD)
 
 ➥ Language : Python3
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
-➥ Source Code : [Click Me](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
+➥ Source Code : [Click Me](https://t.me/ADMOVEIADDD/361)
 """
