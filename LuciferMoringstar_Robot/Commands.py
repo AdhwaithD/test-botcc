@@ -45,7 +45,7 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**You are not on the channel you are watching so you will not get the movie ...!  You can get the movie through this boat only by clicking on the 🔔 Join button below and joining our main channel to get the movie.  Click on T'Try again'👈 to see it and you will get the movie if you give it a Start ...**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ Deploy Now 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('🔥 Movies 🔥', url=f'{TUTORIAL}')
                     ],
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
@@ -102,7 +102,7 @@ async def start(bot, message):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**You are not on the channel you are watching so you will not get the movie ...!  You can get the movie through this boat only by clicking on the 🔔 Join button below and joining our main channel to get the movie.  Click on T'Try again'👈 to see it and you will get the movie if you give it a Start ...**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -112,8 +112,8 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_video(
-            video="https://telegra.ph/file/f72b2c6d426b085c08644.mp4",
+        await message.reply_photo(
+            photo="https://telegra.ph/file/87d740329398824314564.jpg",
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -124,7 +124,7 @@ async def start(bot, message):
                             ),
                         InlineKeyboardButton
                             (
-                                "🤖More Botz", url="https://t.me/AD_BOTZ"
+                                "🎬 Movies", url="https://t.me/ADMOVEIAD"
                             )
                     ],
                     [
@@ -347,7 +347,7 @@ async def bot_info(bot, message):
         [
             InlineKeyboardButton
                 (
-                     'Video', url=f'{TUTORIAL}'
+                     'Movies', url=f'{TUTORIAL}'
                 )
         ]
     ]
