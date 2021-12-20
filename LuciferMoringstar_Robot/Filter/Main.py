@@ -160,7 +160,7 @@ async def group(client, message):
             LuciferMoringstar=await client.send_video(
         chat_id=message.chat.id,
         video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
-        caption=f"""👋Hey {message.from_user.mention}
+        caption=f"""👋Hey
 If this movie is not in our database you will not get that movie..
 Otherwise, the spelling of the name of the requested movie may not be correct...
 So you go to google and check the spelling of the name of the movie you want.
